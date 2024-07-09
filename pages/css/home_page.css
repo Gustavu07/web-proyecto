@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.filters {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2, .filters h3 {
+    margin-top: 0;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filter-group a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.results {
+    width: 75%;
+    margin-left: 5%;
+}
+
+.results h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02); /* Added scale effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+.card img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 1.25em; 
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 0.9em; 
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+.notification.hidden {
+    display: none;
+}
+
+.notification.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.notification.error {
+    background-color: #f44336;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .filters, .results {
+        width: 100%;
+        margin: 0;
+    }
+    .results {
+        margin-top: 20px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .card img {
+        margin-bottom: 10px;
+    }
+}

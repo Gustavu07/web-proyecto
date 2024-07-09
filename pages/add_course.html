@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Curso</title>
+    <link rel="stylesheet" href="css/add_course.css">
+</head>
+<body>
+    <h1>Añadir Nuevo Curso</h1>
+    <form id="add-course-form" enctype="multipart/form-data">
+
+        <label for="categoria">Categoría:</label>
+        <input type="number" id="categoria" name="categoria" min="1" max="10" step="1" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+        
+        <label for="universidad_o_procedencia">Universidad o Procedencia:</label>
+        <input type="text" id="universidad_o_procedencia" name="universidad_o_procedencia" required>
+        
+        <label for="nivel">Nivel:</label>
+        <input type="text" id="nivel" name="nivel" required>
+        
+        <label for="idioma">Idioma:</label>
+        <input type="text" id="idioma" name="idioma" required>
+        
+        <label for="imagenes">Imágenes:</label>
+        <input type="file" id="imagenes" name="imagenes" accept="image/*" required>
+        
+        <label for="fecha_inicio">Fecha de Inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+        
+        <label for="fecha_fin">Fecha de Fin:</label>
+        <input type="date" id="fecha_fin" name="fecha_fin" required>
+        
+        <button type="submit">Añadir Curso</button>
+
+    </form>
+
+    <script src="../services/add_course.js"></script>
+</body>
+</html>

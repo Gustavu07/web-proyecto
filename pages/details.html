@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+</head>
+<body>
+    <main>
+        
+    <header class="header">
+
+        <nav class="menu_navegation">
+            
+            <p class="title"><a href="../index.html"> CursosMax</a> </p>
+
+            <div class="menu">
+                <a href="#">Categorias</a>
+                <div class="submenu">
+                    <a href="#">Inglés</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Liderazgo</a>
+                    <a href="#">Bussiness</a>
+                    <a href="#">Startups</a>
+                    <a href="#">Contenido Digital</a>
+                </div>
+            </div>
+
+            <div class="search">
+                <input  type="search" name="" placeholder="Que desea Aprender">
+                <button>  <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <ul class="listHeader">
+                <li><a href="../pages/home_page.html">HOME</a></li>
+                <div class="dropdown">
+                    <div class="dropdown-select">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="./profile.html">Mi Perfil</a>
+                        <a href="#">Mis Cursos</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container3">
+        <div class="course-header">
+            <h1 id="course-name"></h1>
+        </div>
+        <p id="course-description"></p>
+        <div id="course-language" class="language-info">
+            <span><i class="fa-solid fa-language"></i></span>
+        </div>
+        <div class="instructors">
+            <span>Instructor: <a href="#">Google Cloud Training</a></span>
+        </div>
+        <button id="redirect-button" type="button" class="button-suscribe">Inscríbete gratis</button>
+        <span id="course-start-date" class="start-date"></span>
+        <p>92.761 ya inscrito</p>
+    </div> 
+
+
+    <div class="contenido">
+        <h2>Recomendado si estás interesado en Desarrollo móvil y web</h2>
+        <div class="tabs">
+            <button class="tab-button active">Recomendado</button>
+            <button class="tab-button">Títulos de grado</button>
+        </div>
+        <div id="recomendado" class="tab-content active">
+            <div class="card">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/31/1a5cdc77aa4e32bcbad9cd4fd1dc84/Screen-Shot-2023-02-17-at-10.42.25-AM.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50" alt="Curso 1">
+                <div class="card-content">
+                    <h3>Coursera Project Network</h3>
+                    <p>Construya un sitio web de portafolio con HTML, CSS y JavaScript</p>
+                    <span>Proyecto Guiado</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/ff/4584404c7511e7a18adb2a6ad3c009/GettyImages-185239648.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50" alt="Curso 2">
+                <div class="card-content">
+                    <h3>University of California, Davis</h3>
+                    <p>Introducción al desarrollo web</p>
+                    <span>Curso</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/fe/7320a26ec945e6ae1a3251d38d43b2/front-end-dev1.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50" alt="Curso 3">
+                <div class="card-content">
+                    <h3>Meta</h3>
+                    <p>Introducción al desarrollo de front-end</p>
+                    <span>Curso</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/1e/30b8f132b649e5afbf496dac6d21a9/front-end-dev4.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50" alt="Curso 4">
+                <div class="card-content">
+                    <h3>Meta</h3>
+                    <p>HTML y CSS en profundidad</p>
+                    <span>Curso</span>
+                </div>
+            </div>
+        </div>
+        <div id="titulos" class="tab-content">
+        </div>
+    </div>
+    
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañia</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Politica de privacidad </a></li>
+                        <li><a href="#">afiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Envios </a></li>
+                        <li><a href="#">Estatus de orden</a></li>
+                        <li><a href="#">Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Telefono </a></li>
+                        <li><a href="#">Pantalla</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                    <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</main>
+
+<script src="../services/detailcurso.js"></script>
+
+
+</body>
+</html>

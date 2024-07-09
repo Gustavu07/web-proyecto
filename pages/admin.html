@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="./css/admin.css"> 
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Cursos</h1>
+        <button class="home-button" type="button">
+            <a href="./home_page.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </button>
+        <div class="button-container">
+            <button type="submit"><a href="./add_course.html">Crear nuevo curso</a></button>
+        </div>
+        <div id="courses-container" class="courses-container">
+        </div>
+    </div>
+    
+    <!-- Formulario flotante -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-button" class="close-button">&times;</span>
+            <form id="course-form">
+                <label for="course-name">Nombre:</label>
+                <input type="text" id="course-name" name="course-name" required>
+                
+                <label for="course-description">Descripción:</label>
+                <textarea id="course-description" name="course-description" required></textarea>
+                
+                <label for="course-university">Universidad:</label>
+                <input type="text" id="course-university" name="course-university" required>
+                
+                <label for="course-level">Nivel:</label>
+                <input type="text" id="course-level" name="course-level" required>
+                
+                <label for="course-language">Idioma:</label>
+                <input type="text" id="course-language" name="course-language" required>
+                
+                <label for="course-start">Fecha de inicio:</label>
+                <input type="date" id="course-start" name="course-start" required>
+                
+                <label for="course-end">Fecha de fin:</label>
+                <input type="date" id="course-end" name="course-end" required>
+                
+                <div class="button-group">
+                    <button type="submit" id="save-button">Guardar</button>
+                    <button type="button" id="delete-button">Eliminar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<script src="./admin.js"></script>
+</body>
+</html>

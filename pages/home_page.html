@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="css/home_page.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="menu_navegation">
+            <p class="title"><a href="../index.html"> CursosMax</a> </p>
+
+            <div class="menu">
+                <a href="#">Tecnología</a>
+                <div class="submenu">
+                    <a href="#">Matematicas</a>
+                    <a href="#">Idiomas</a>
+                    <a href="#">Salud</a>
+                    <a href="#">Bussiness</a>
+                    <a href="#">Administracion</a>
+                    <a href="#">Arte</a>
+                </div>
+            </div>
+            
+            <div class="search">
+                <input type="search" id="search-input" placeholder="Qué desea aprender">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div id="autocomplete-list" class="autocomplete-items"></div>
+            </div>
+            
+            <ul class="listHeader">
+                <li><a href="../pages/home_page.html">HOME</a></li>
+
+                <div class="dropdown">
+                    <div class="dropdown-select">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="./profile.html">Mi Perfil</a>
+                        <a href="#">Mis Cursos</a>
+                        <a href="#" id="logout-link">Cerrar Sesión</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">      
+        <div class="filters">
+            <h2>Filtrar por</h2>
+            <div class="filter-group">
+                <h3>Tema</h3>
+                <label><input type="checkbox"> Ciencia de Datos (911)</label>
+                <label><input type="checkbox"> Ciencias de la Computación (251)</label>
+                <label><input type="checkbox"> Tecnología de información (244)</label>
+                <label><input type="checkbox"> Negocios (203)</label>
+                <a href="#">Mostrar 7 más</a>
+            </div>
+            <div class="filter-group">
+                <h3>Idioma</h3>
+                <label><input type="checkbox" class="filter-checkbox" value="Inglés"> Inglés (1546)</label>
+                <label><input type="checkbox" class="filter-checkbox" value="Español"> Español (1064)</label>
+                <label><input type="checkbox" class="filter-checkbox" value="Francés"> Francés (982)</label>
+                <label><input type="checkbox" class="filter-checkbox" value="Portugués"> Portugués (979)</label>
+                <a href="#">Mostrar 19 más</a>
+            </div>
+            <div class="filter-group">
+                <h3>Nivel</h3>
+                <label><input type="checkbox" class="filter-checkbox" value="Facil"> Facil</label>
+                <label><input type="checkbox" class="filter-checkbox" value="Intermedio"> Intermedio</label>
+                <label><input type="checkbox" class="filter-checkbox" value="Avanzado"> Avanzado</label>
+                <a href="#">Mostrar 19 más</a>
+            </div>
+        </div>
+        
+        <div class="results">
+            <h1>Resultados para "Cursos Disponibles"</h1>
+            <div id="course-list"></div>
+        </div>
+    
+
+    <div id="notification" class="notification hidden"></div>
+    
+    <script src="../services/cursos.js"></script>
+    <script src="../services/home_page.js" type="module"></script>
+    <script src="../login/cerrarsesion.js"></script>
+</body>
+</html>

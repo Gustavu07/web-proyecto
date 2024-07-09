@@ -1,0 +1,49 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    background-color: #EAEBF0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 1520px;
+    height: auto;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+
+@media (max-width: 1520px) {
+    main {
+        width: 100%; 
+        padding: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    body,
+    html {
+        font-size: 14px; 
+    }
+
+    main {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body,
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        padding: 5px; 
+    }
+}
